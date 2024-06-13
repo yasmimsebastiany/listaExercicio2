@@ -1,5 +1,216 @@
 const prompt = require('prompt-sync')();
 
+let numExercicio;
+let validoExercicio = false;
+let continuarExercicio = 's';
+
+while (continuarExercicio.toLowerCase() === 's') {
+    validoExercicio = false;
+    while (!validoExercicio) {
+        // Pergunta ao usuário qual exercício acessar
+        numExercicio = prompt("Digite o número do exercício que você deseja acessar: ");
+
+        // Chama a função de exercício correspondente
+        switch(numExercicio) {
+            case '1':
+                exercicio01();
+                validoExercicio = true;
+                break;
+            case '2':
+                exercicio02();
+                validoExercicio = true;
+                break;
+            case '3':
+                exercicio03();
+                validoExercicio = true;
+                break;
+            case '4':
+                exercicio04();
+                validoExercicio = true;
+                break;
+            case '5':
+                exercicio05();
+                validoExercicio = true;
+                break;
+            case '6':
+                exercicio06();
+                validoExercicio = true;
+                break;
+            case '7':
+                exercicio07();
+                validoExercicio = true;
+                break;
+            case '8':
+                exercicio08();
+                validoExercicio = true;
+                break;
+            case '9':
+                exercicio09();
+                validoExercicio = true;
+                break;
+            case '10':
+                exercicio10();
+                validoExercicio = true;
+                break;
+            case '11':
+                exercicio11();
+                validoExercicio = true;
+                break;
+            case '12':
+                exercicio12();
+                validoExercicio = true;
+                break;
+            case '13':
+                exercicio13();
+                validoExercicio = true;
+                break;
+            case '14':
+                exercicio14();
+                validoExercicio = true;
+                break;
+            case '15':
+                exercicio15();
+                validoExercicio = true;
+                break;
+            case '16':
+                exercicio16();
+                validoExercicio = true;
+                break;
+            case '17':
+                exercicio17();
+                validoExercicio = true;
+                break;
+            case '18':
+                exercicio18();
+                validoExercicio = true;
+                break;
+            case '19':
+                exercicio19();
+                validoExercicio = true;
+                break;
+            case '20':
+                exercicio021();
+                validoExercicio = true;
+                break;
+            case '22':
+                exercicio22();
+                validoExercicio = true;
+                break;
+            case '23':
+                exercicio23();
+                validoExercicio = true;
+                break;
+            case '24':
+                exercicio24();
+                validoExercicio = true;
+                break;
+            case '25':
+                exercicio25();
+                validoExercicio = true;
+                break;
+            case '26':
+                exercicio26();
+                validoExercicio = true;
+                break;
+            case '27':
+                exercicio27();
+                validoExercicio = true;
+                break;
+            case '28':
+                exercicio28();
+                validoExercicio = true;
+                break;
+            case '29':
+                exercicio29();
+                validoExercicio = true;
+                break;
+            case '30':
+                exercicio30();
+                validoExercicio = true;
+                break;
+            case '31':
+                exercicio31();
+                validoExercicio = true;
+                break;
+            case '32':
+                exercicio32();
+                validoExercicio = true;
+                break;
+            case '33':
+                exercicio33();
+                validoExercicio = true;
+                break;
+            case '34':
+                exercicio34();
+                validoExercicio = true;
+                break;
+            case '35':
+                exercicio35();
+                validoExercicio = true;
+                break;
+            case '36':
+                exercicio36();
+                validoExercicio = true;
+                break;
+            case '37':
+                exercicio37();
+                validoExercicio = true;
+                break;
+            case '38':
+                exercicio38();
+                validoExercicio = true;
+                break;
+            case '39':
+                exercicio39();
+                validoExercicio = true;
+                break;
+            case '40':
+                exercicio40();
+                validoExercicio = true;
+                break;
+            case '41':
+                exercicio41();
+                validoExercicio = true;
+                break;
+            case '42':
+                exercicio42();
+                validoExercicio = true;
+                break;
+            case '43':
+                exercicio43();
+                validoExercicio = true;
+                break;
+            case '44':
+                exercicio44();
+                validoExercicio = true;
+                break;
+            case '45':
+                exercicio45();
+                validoExercicio = true;
+                break;
+            case '46':
+                exercicio46();
+                validoExercicio = true;
+                break;    
+            case '47':
+                exercicio47();
+                validoExercicio = true;
+                break; 
+            case '48':
+                exercicio48();
+                validoExercicio = true;
+                break; 
+            case '49':
+                exercicio49();
+                validoExercicio = true;
+                break; 
+            default:
+                console.log("Exercício não encontrado. Por favor, tente novamente.");
+        }
+    }
+    continuarExercicio = prompt("Deseja visualizar outro exercício? (s/n): ");
+}
+
 function exercicio01() {
     let quant = parseInt(prompt('Quantos cigarros fumados por dia? '));
     let anos = parseInt(prompt('Há quantos anos fuma? '));
@@ -645,7 +856,6 @@ function gerarMatriz(linhas, colunas) {
 }
 
 function imprimirMatriz(matriz) {
-    console.log('Matriz gerada: ');
     for(let i = 0; i < matriz.length; i++) {
         console.log(matriz[i].join(' '));
     }
